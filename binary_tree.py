@@ -32,28 +32,6 @@ class Binary_Tree():
 			right_height=self.right_child.height()
 		return 1+max(left_height,right_height)
 
-	def new_size(self,size=0):
-		if self.key==None:
-			return 0
-		if self.left_child==None:
-			left_size=0
-		else:
-			left_size=self.left_child.size()
-		if self.right_child==None:
-			right_size=0
-		else:
-			right_size=self.right_child.size()
-		return 1+left_size+right_size
-
-	def new_height(self):
-		if self.key==None:
-			return -1
-		if self.left_child!=None:
-			left_height=self.left_child.height()
-		if self.right_child!=None:
-			right_height=self.right_child.height()
-		return 1+max(left_height,right_height)
-
 
 print("hello world !")
 H=Binary_Tree("H")
